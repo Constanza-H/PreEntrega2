@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: raleway;
+    box-sizing: border-box;
+}
+
+.redes {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(to bottom , #A2B38B , #7FA682 , #57997E );
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* index */
+
+.header {
+    width:100% ;
+    height: 110px ;
+    background-color: #A2B38B;
+    display: flex;
+    justify-content: right;
+    list-style-position: inside;
+}
+.header .Navlogo{
+    width: 100%;
+    justify-content:left;
+    display: flex;
+    flex-direction: row;
+
+}
+.header li{
+list-style:none;
+}
+.header .menu a{
+    text-decoration: none;
+}
+.header .cuenta{
+    width: 100%;
+   display: flex;
+   position: relative;
+    margin-top: 20px;
+   gap: 5px;
+   justify-content: end;
+  padding-right:  15px;
+  font-size: 15px;
+}
+
+.header .cuenta a{
+    text-decoration: none;
+    color: #fff;
+}
+.header .navBar .menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+    justify-content: space-between;
+    font-size: 15px;
+    gap: 30px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.navBar .home{
+    display: none;
+}
+.header .menu a{
+    color: #fff;
+}
+.mainContainer1 .encabezado{
+    background-image: url(../assets/img/portada\ alimentos\ lista.jpg);
+    width: 100%;
+    height: 350px;
+   background-repeat: no-repeat;
+}
+.mainContainer1 .encabezado h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'raleway', bold;
+    text-shadow: 2px 2px #285430 ;
+    text-align: center;
+    padding: 100px;
+}
+.mainContainer1 .encabezado h1{
+animation-name: texto ;
+animation-duration: 0.7s;
+}
+@keyframes texto {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    
+}
+
+.cards{ 
+    
+    background-color: #EFEBE0;
+    width: 100%;
+    height: 300px;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1fr ; 
+
+}
+.box1__description h1{
+grid-column:1 ;
+grid-row: 1 ;
+
+}
+.box2__description h1{
+grid-column:2;
+grid-row: 1 ;
+}
+.box3__description h1{
+    grid-column:3 ;
+    grid-row: 1 ;
+    }
+
+.cards .box-2 img{
+transform:rotate(90deg);
+
+} 
+.cards .box-3 img{
+border-radius: 50%;
+
+    } 
+.cards a{
+text-decoration: none;
+color: black;
+}
+.cards .box1__description h2{
+    background-color: #a2b38b;
+    width: 100%;
+    color: #ffff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.cards .box1__description a{
+    font-size: 16px;
+}
+.cards .box2__description a{
+    font-size: 16px;
+}
+.cards .box3__description a{
+    font-size: 16px;
+}
+.cards .box2__description h2{
+    background-color: #a2b38b;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 25px;
+    margin-top: 10px;
+}
+    
+.cards .box3__description h2{
+        background-color: #a2b38b;
+        width: 100%;
+        color: #ffff;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    
+.cards {
+    justify-content: center;
+    align-items: center;
+}
+.cards img {
+    border-radius: 50%;
+} 
+.cards .box-1{
+    background-color: #fff;
+    text-align: center;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+   
+.cards .box-2{
+    background-color: #fff;
+   text-align: center;
+   height: 250px;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    border-radius: 20px;
+}
+.cards .box-3{
+    background-color: #fff;
+    text-align: center;
+    height: 250px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* recetas saladas */
+
+.mainContainer2 h1{
+    color: #a2b38b;
+    font-family:'raleway', bold;
+    font-size: 40px;
+    padding: 10px;
+}
+.mainContainer2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 50px 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+.mainContainer2 h1{
+    grid-column: 2;
+    grid-row: 1 ;
+   text-align: center;
+    margin-top: 50px;
+}
+.mainContainer2 h2{
+    grid-column:2 ;
+    grid-row:2 ;
+   display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #285430;
+    background-color: #E4E9BE;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.section-1_1{
+    grid-column: 2/3;
+    grid-row:3 ;
+   align-items: center;
+   margin-left: 300px;
+}
+.section-1_1 .preparacion1{
+    list-style-image: url(../assets/img/cronometro\ cocina\ red.png);
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 15px;
+}
+.section-1_1 .nivel1 {
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.section-1_2{
+    grid-column: 2;
+    grid-row:3 ;
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+    font-size: 15px;
+}
+
+.section-1_3{
+    grid-column: 2;
+    grid-row:4 ;
+    font-size: 15px;
+}
+.section-1_4{
+    grid-column:2 ;
+    grid-row:5 ;
+    font-size: 15px;
+}
+.section-1_4 .img1{
+    display: grid;
+    grid-column:2 ;
+    grid-row:6 ;
+    border-radius: 50%;
+}
+/* recetas dulces */
+
+.mainContainer3 h1{
+    color: #a2b38b;
+    font-family:'raleway', bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    }
+    .mainContainer3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 50px 1fr 1fr 1fr 1fr;
+        row-gap: 15px;
+    }
+    .mainContainer3 h1{
+        grid-column: 2;
+        grid-row: 1 ;
+        margin-top: 50px;
+        
+    }
+    .mainContainer3 h2{
+        color: #285430;
+        background-color: #E4E9BE;
+        display: grid;
+        border-radius: 20px;
+        justify-content: center;
+        grid-column:2 ;
+        grid-row:2 ;
+        font-size: 25px;
+     }
+     .section-2_1{
+         grid-column: 2/3;
+         grid-row:3 ;
+         align-items: center;
+         margin-left: 300px;
+     }
+     .section-2_1 .preparacion2{
+         list-style-image: url(../assets/img/cronometro\ cocina\ red.png);
+         justify-content: center;
+         align-items: flex-end;
+         font-size: 18px;
+     }
+     .section-2_1 .nivel2 {
+         list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+        margin-top: 15px;
+        font-size: 18px;
+     }
+     .section-2_2{
+         grid-column: 2;
+         grid-row:3 ;
+         list-style-image: url(../assets/img/i\ cuchara\ verde\ red.png);
+         font-size: 18px;
+     }
+     .section-2_3{
+         grid-column: 2;
+         grid-row:4 ;
+         font-size: 18px;
+     }
+     .section-2_4{
+         grid-column:2 ;
+         grid-row:5 ;
+         font-size: 18px;
+     }
+.section-2_5{
+        grid-column:2 ;
+         grid-row:6 ;
+         display: grid;
+         align-items: flex-start;
+         margin-left: 200px;
+         font-size: 18px;
+        
+        }
+.img1{
+     border-radius: 50%;
+}
+.img_1{
+    display: none ;
+} 
+
+/* composicion nutricional */
+
+.mainContainer5 h1{
+    color: #a2b38b;
+    font-family:'raleway', bold;
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 25px;
+    }
+.mainContainer5{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 50px 1fr;
+row-gap: 15px;
+}
+.mainContainer5 h1{
+    grid-column: 3 / 4 ;
+    grid-row: 1 ;
+    
+}
+.section-4_1{
+    grid-column:2 ;
+    grid-row:2 ;
+  margin-top: 100px;
+}
+.section-4_2{
+    grid-column:2 ;
+    grid-row:3 ;
+    margin-top: 20px;
+}
+.section-4_3{
+    grid-column:2 ;
+    grid-row:4 ;
+    margin-top: 20px ;
+}
+.section-4_9{
+    grid-column:2 ;
+    grid-row:5 ;
+    margin-top: 20px ;
+}
+.section-4_4{
+    grid-column:2 ;
+    grid-row:6 ;
+    margin-top: 20px ;
+}
+.section-4_4 img{
+    border-radius: 50%;
+}
+.section-4_5{
+    grid-column:4 ;
+    grid-row:2 ;
+    margin-top: 100px;
+}
+.section-4_6{
+    grid-column:4 ;
+    grid-row:3 ;
+    margin-top: 20px;
+}
+.section-4_7{
+    grid-column:4 ;
+    grid-row:4 ;
+    margin-top: 20px;
+}
+.section-4_10{
+    grid-column:4 ;
+    grid-row:5 ;
+    margin-top: 20px ;
+}
+.section-4_8{
+    grid-column:4 ;
+    grid-row:6 ;
+    margin-top: 20px ;
+}
+.section-4_8 img{
+    border-radius: 50%;
+   align-content:  center;
+}
+
+
+/* novedades */
+.mainContainer4 h1{
+    color: #a2b38b;
+    font-family:'raleway', bold;
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+    grid-column: 2;
+    grid-row:1 ;
+    text-align: center;
+    }
+.mainContainer4{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 50px 50px 1000px 50px 900px;
+column-gap: 25px;
+border-style: solid 2px #a2b38b ;
+row-gap: 25px;
+}
+.mainContainer4 h2{
+    grid-area: mainContainer4 h2;
+    color: #285430;
+    background-color: #E4E9BE;
+    display: grid;
+    border-radius: 20px;
+    justify-content: center;
+    grid-column:2 ;
+    grid-row:2 ;
+    
+}
+.section-3_1{
+    grid-column:2 ;
+    grid-row:3 ;
+    text-align: center;
+    
+}
+.img_1{
+    border-radius: 50%;
+    align-items: center;
+    margin-top: 20px;
+}
+.section-3_2{
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+ 
+}
+.section-3_3{
+    grid-column:2 ;
+    grid-row:5;
+    text-align: center;
+    margin-right: 15px;
+}
+.section-3_3 .img_2{
+    border-radius: 50%;
+    margin-top: 20px;
+    align-items: center;
+}
+.section-3_4{
+    grid-column:2 ;
+    grid-row:6 ;
+    margin-right: 15px;
+}
+/* contacto */
+
+.mainContainer6{
+    width: 100%;
+    height: 510px;
+    background-image: url(../assets/img/avena\ red.jpg);
+    background-repeat: no-repeat;
+} 
+.mainContainer6 h1{
+    color: #285430;
+    font-family:'raleway';
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    }
+ .formulario1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 50px 50px 250px;
+    
+}
+.frase{
+    display: flex;
+    position: relative;
+}
+.frase {
+    background-color: #E5D9B6;
+    text-align: center;
+    justify-content: center;
+    font-family:'raleway', Light;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.nombre {
+   grid-column: 3;
+   grid-row: 1;
+   justify-items: left;
+   font-family:'raleway',medium ;
+   font-size: 8px;
+   margin-top: 20px;
+}
+.email {
+  grid-column: 3;
+  grid-row: 2;
+  justify-items: left;
+  font-family:'raleway',medium ;
+  font-size: 8px;
+  margin-top: 20px;
+}
+.comentario {
+    grid-column: 3 ;
+    grid-row: 3;
+    justify-items: center;
+    font-family:'raleway',medium ;
+    font-size: 8px;
+    margin-top: 20px;
+}
+.enviar {
+    grid-column: 4;
+    grid-row:4 ;
+    justify-items: left;
+    width: 100%;
+    height: 50px;
+    margin-top: 170px;
+    margin-left: 20px;
+    
+    font-family: 'raleway', bold;
+    font-size: 12px;
+    background-color: #E5D9B6;
+    border: #E5D9B6;
+}
+    /* mi cuenta */
+    .mainContainer7 h1{
+    color: #a2b38b;
+    font-family:'raleway', bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    }
+    .mainContainer7{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 300px 1fr 1fr 1fr 50px 1fr 1fr 1fr;
+        font-family: 'raleway', bold;
+        font-size: 15px;
+    }
+    .section-5_1 .titulo1{
+        grid-column:2 ;
+        grid-row:1 ;
+    }
+    .nombre{
+        grid-column:2 ;
+        grid-row:3 ;
+
+    }
+    .apellido{
+        grid-column:2 ;
+        grid-row:6; 
+    }
+    .fecha{
+        grid-column:2 ;
+        grid-row: 5 ;
+    }
+    .sexo{
+        grid-column:2 ;
+        grid-row: 6 ;
+    }
+    _.email7_1{
+        grid-column:2 ;
+        grid-row:7 ;
+    }
+    .contraseña1{
+        grid-column:3 ;
+        grid-row:8 ;
+    }
+    .terminos{
+        grid-column: 2 ;
+        grid-row: 9 ;
+    }
+    .section-5_2 .titulo2{
+        grid-column: 2 ;
+        grid-row: 6 ;
+    }
+    .email7_2{
+        grid-column: 2 ;
+        grid-row: 7;
+    }
+    .contraseña2{
+        grid-column: 2 ;
+        grid-row:8 ; 
+    } 
+
+    @media ( max-width:768px ){
+        /* vista tablet */
+    header{
+        background-image:linear-gradient(to bottom , #A2B38B , #7FA682 , #57997E ); 
+    }
+    .navBar {
+        flex-direction: column;
+       align-items: center;
+    }
+    .header .Navlogo img{
+        display: block;
+    }
+    .mainContainer1 .encabezado{
+        background-image: url(../assets/img/portada\ alimentos\ tablet.jpg);
+        width: 100%;
+       background-repeat: no-repeat;
+    }
+
+
+    }
+    @media ( max-width:320px ){
+        /* vista mobile */
+
+/* recetas saladas */
+
+header{
+    background-image:linear-gradient(to bottom , #A2B38B , #7FA682 , #57997E ); 
+}
+.navBar {
+    flex-direction: column;
+   align-items: center;
+}
+.navBar .home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+.header {
+    width:100% ;
+    height: 75px ;
+    background-color: #A2B38B;
+    display: flex;
+    justify-content: right;
+   
+}
+.header .navBar .menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+    gap: 2px;
+    font-size: 8px;
+    margin-left: 2px;
+    
+}
+.header .Navlogo {
+    display: none;
+    
+}
+.header .cuenta{
+width: 100%;
+display: flex;
+position: relative;
+font-size: 8px;
+margin-top: 0px;
+margin-bottom: -10px;
+}
+.mainContainer2 h1{
+    font-size: 15px;
+    text-align: center;
+}
+.mainContainer2 {
+display: grid;
+grid-template-columns: 1fr 200px 1fr;
+grid-template-rows: 100px 50px 150px 180px 150px;
+}
+.mainContainer2 h1{
+    grid-column: 2;
+    grid-row: 1 ;
+   text-align: center;
+    margin-top: 5px;
+   
+}
+.mainContainer2 h2{
+    grid-column: 2 ;
+    grid-row:1 ;
+    height: 35px;
+    margin-top: 65px;
+   display: grid;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.section-1_1{
+    grid-column: 2;
+    grid-row:2 ;
+   align-items: flex-end;
+   margin-left: 20px;
+   text-align: center;
+  margin-left: 120px;
+  font-size: 8px;
+}
+.section-1_1 .preparacion1{
+    list-style-image: url(../assets/img/cronometro\ cocina\ mobile.png);
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 8px ;
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.section-1_1 .nivel1 {
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    margin-top: 0px;
+    font-size: 8px ;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 15px;
+}
+.section-1_2{
+    grid-column: 2;
+    grid-row:3 ;
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    font-size: 8px ;
+    margin-left: 25px;
+}
+.section-1_2 h3{
+    color: #a2b38b;
+}
+
+.section-1_3{
+    grid-column: 2 ;
+    grid-row:4 ;
+    font-size: 8px ;
+    margin-left: 25px;
+   
+}
+.section-1_3 h3{
+    color: #a2b38b;
+}
+.section-1_4{
+    grid-column:2 ;
+    grid-row:5 ;
+    font-size: 8px ;
+    margin-left: 25px;
+}
+.section-1_4 h3 p::after{
+display:  url(../assets/img/signo\ excla\ mobile.png);
+}
+.section-1_4 h3{
+    color: #a2b38b;
+}
+.section-1_4 .img1{
+    display: none;
+}
+
+/* vista mobile */
+/* recetas dulces */
+header{
+    background-image:linear-gradient(to bottom , #A2B38B , #7FA682 , #57997E ); 
+}
+.navBar {
+    flex-direction: column;
+   align-items: center;
+}
+.navBar .home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+.header {
+    width:100% ;
+    height: 75px ;
+    background-color: #A2B38B;
+    display: flex;
+    justify-content: right;
+   
+}
+.header .navBar .menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+    gap: 2px;
+    font-size: 8px;
+    margin-left: 2px; 
+    margin-bottom: 2px;
+
+}
+.header .Navlogo {
+    display: none;
+    
+}
+.header .cuenta{
+width: 100%;
+display: flex;
+position: relative;
+font-size: 8px;
+margin-top: 0px;
+margin-bottom: -10px;
+}
+.mainContainer3 h1{
+    font-size: 15px;
+    text-align: center;
+}
+.mainContainer3 {
+display: grid;
+grid-template-columns: 1fr 200px 1fr;
+grid-template-rows: 100px 50px 150px 130px 150px;
+}
+.mainContainer3 h1{
+    grid-column: 2;
+    grid-row: 1 ;
+   text-align: center;
+    margin-top: 5px;
+   
+}
+.mainContainer3 h2{
+    grid-column: 2 ;
+    grid-row:1 ;
+    height: 35px;
+    margin-top: 65px;
+   display: grid;
+    border-radius: 20px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.section-2_1{
+    grid-column: 2;
+    grid-row:2 ;
+   align-items: flex-end;
+   margin-left: 20px;
+   text-align: center;
+  margin-left: 120px;
+  font-size: 8px;
+}
+.section-2_1 .preparacion2{
+    list-style-image: url(../assets/img/cronometro\ cocina\ mobile.png);
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 8px ;
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.section-2_1 .nivel2 {
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    margin-top: 0px;
+    font-size: 8px ;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 15px;
+}
+.section-2_2{
+    grid-column: 2;
+    grid-row:3 ;
+    list-style-image: url(../assets/img/i\ cuchara\ verde\ mobile.png);
+    font-size: 8px ;
+    margin-left: 25px;
+}
+.section-2_2 h3{
+    color: #a2b38b;
+}
+
+.section-2_3{
+    grid-column: 2 ;
+    grid-row:4 ;
+    font-size: 8px ;
+    margin-left: 25px;
+   
+}
+.section-2_3 h3{
+    color: #a2b38b;
+}
+.section-2_4{
+    grid-column:2 ;
+    grid-row:5 ;
+    font-size: 8px ;
+    margin-left: 25px;
+}
+
+.section-2_4 h3{
+    color: #a2b38b;
+}
+.section-2_4 .img2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+}
